@@ -159,3 +159,15 @@ main {
   color: crimson;
 }
 
+@media screen and (max-width: 700px) {
+    header {
+        padding: 2rem 1rem;
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    
+      header h1 {
+        font-size: 1.8rem;
+    
+}
