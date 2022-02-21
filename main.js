@@ -33,6 +33,10 @@ window.addEventListener("load", () => {
     const task_actions_el = document.createElement("div");
     task_actions_el.classList.add("actions");
 
+    const task_checked_el = document.createElement("button");
+    task_checked_el.classList.add("checked");
+    task_checked_el.innerHTML = "Confirmar";
+
     const task_edit_el = document.createElement("button");
     task_edit_el.classList.add("edit");
     task_edit_el.innerHTML = "Editar";
@@ -41,6 +45,7 @@ window.addEventListener("load", () => {
     task_delete_el.classList.add("delete");
     task_delete_el.innerHTML = "Apagar";
 
+    task_actions_el.appendChild(task_checked_el);
     task_actions_el.appendChild(task_edit_el);
     task_actions_el.appendChild(task_delete_el);
 
@@ -49,6 +54,11 @@ window.addEventListener("load", () => {
     list_el.appendChild(task_el);
 
     input.value = "";
+
+    task_checked_el.addEventListener("click", () => {
+      task_input_el.classList.remove("text");
+      task_input_el.classList.add("fulfill");
+    });
 
     task_edit_el.addEventListener("click", () => {
       if (task_edit_el.innerText.toLowerCase() == "editar") {
