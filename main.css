@@ -177,9 +177,9 @@ main {
 
   #new-task-submit {
     font-size: 1rem;
-}
+  }
 
-main {
+  main {
     padding: 2rem 1rem;
     max-width: 600px;
     width: 100%;
@@ -196,7 +196,5 @@ main {
 
   .task .actions button {
     font-size: 0.9rem;
-   
   }
-  
 }
