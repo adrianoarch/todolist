@@ -159,7 +159,7 @@ main {
   color: crimson;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   header {
     padding: 2rem 1rem;
     max-width: 400px;
@@ -191,10 +191,10 @@ main {
   }
 
   #tasks .task .content .text {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .task .actions button {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
