@@ -111,7 +111,7 @@ main {
 }
 
 #tasks .task .content {
-    flex: 1 1 0%;
+  flex: 1 1 0%;
 }
 
 #tasks .task .content .text {
@@ -160,14 +160,43 @@ main {
 }
 
 @media screen and (max-width: 700px) {
-    header {
-        padding: 2rem 1rem;
-        max-width: 600px;
-        width: 100%;
-        margin: 0 auto;
-      }
-    
-      header h1 {
-        font-size: 1.8rem;
-    
+  header {
+    padding: 2rem 1rem;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  #new-task-input {
+    font-size: 1rem;
+  }
+
+  #new-task-submit {
+    font-size: 1rem;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .task-list h2 {
+    font-size: 1rem;
+  }
+
+  #tasks .task .content .text {
+    font-size: 0.9rem;
+  }
+
+  .task .actions button {
+    font-size: 0.9rem;
+   
+  }
+  
 }
