@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --dark: #374151;
   --darker: #1f2937;
@@ -218,3 +219,233 @@ main {
     font-size: 0.8rem;
   }
 }
+=======
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #6b7280;
+  --light: #eee;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --green: #2ed573;
+  --marine: #273c75;
+  --blue: #3498db;
+  --softblue: #74b9ff;
+  --mostard: #ffb142;
+  --yellow: #ffeaa7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, var(--dark), var(--darkest));
+  color: #fff;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: min(2rem, 2vw);
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+#new-task-form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#new-task-input {
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: var(--light);
+  font-size: min(2rem, 2vw);
+}
+
+#new-task-input::placeholder {
+  color: var(--gray);
+}
+
+#new-task-submit {
+  color: var(--pink);
+  font-size: min(1.25rem, 1.5vw);
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--blue), var(--softblue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#new-task-submit:hover {
+  opacity: 0.8;
+}
+
+#new-task-submit:active {
+  opacity: 0.6;
+}
+
+main {
+  flex: 1 1 0%;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* .task-list {
+  padding: 1rem;
+} */
+
+.task-list h2 {
+  font-size: max(1.5rem, 1.5vw);
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+#tasks .task .content:hover input {
+  background-color: var(--darker);
+  cursor: pointer;
+}
+
+#tasks .task .content {
+  flex: 1 1 0%;
+}
+
+#tasks .task .content .text {
+  color: var(--light);
+  font-size: min(1.125rem, 1.5vw);
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+#tasks .task .content .fulfill {
+  color: var(--green);
+  font-size: min(1.125rem, 1.5vw);
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+  text-decoration: line-through;
+}
+
+#tasks .task .content .text:not(:read-only) {
+  color: var(--pink);
+}
+
+#tasks .task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.task .actions button:hover {
+  opacity: 0.8;
+}
+
+.task .actions button:active {
+  opacity: 0.6;
+}
+
+.task .actions .edit {
+  background-image: linear-gradient(to right, var(--mostard), var(--yellow));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete {
+  color: crimson;
+}
+
+.task .actions .checked {
+  background: var(--green);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    padding: 2rem 1rem;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  #new-task-input {
+    font-size: 1rem;
+  }
+
+  #new-task-submit {
+    font-size: 0.7rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .task-list h2 {
+    font-size: 1rem;
+  }
+
+  #tasks .task .content .text {
+    font-size: 0.7rem;
+  }
+
+  .task .actions button {
+    font-size: 0.8rem;
+  }
+}
+>>>>>>> fe3808d (Alteração na função de confirmar tarefa. Retirei o botão de confirmar e adicionei a funcionalidade de clicar na tarefa para confirmar.)
